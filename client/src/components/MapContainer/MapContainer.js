@@ -15,6 +15,10 @@ import Login from '../Login/Login';
 import { logOut } from '../../actions/users';
 import { Avatar } from '@material-ui/core';
 import LikePins from '../LikePins/LikePins';
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
+import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'; // Load worker code separately with worker-loader
+
+mapboxgl.workerClass = MapboxWorker;
 
 const MapContainer = () => {
     const { pins } = useSelector((state) => state.pins)
