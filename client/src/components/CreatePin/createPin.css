@@ -1,0 +1,38 @@
+form {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  padding: 5px;
+}
+
+textarea {
+  padding: 5px;
+  outline: none;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  color: gray;
+}
+
+.add-button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(16, 16, 112);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-button:hover {
+  background-color: rgb(16, 16, 95);
+}

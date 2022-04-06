@@ -1,0 +1,20 @@
+.like-button {
+  /* width: max-content; */
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+  color: rgb(17, 17, 172);
+  cursor: pointer;
+  outline: none;
+}
+
+.like-button:hover {
+  color: blue;
+}
+
+.like-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}

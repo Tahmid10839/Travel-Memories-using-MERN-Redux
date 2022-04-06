@@ -1,0 +1,105 @@
+.login-container {
+  width: 350px;
+  height: 450px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: rgb(35, 35, 179);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.form {
+  /* width: 300px; */
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form form label {
+  margin: 0;
+  border: none;
+  font-weight: 500;
+}
+
+.form form input {
+  margin: 5px 0px 10px 0px;
+}
+
+.login-btn {
+  background-color: rgb(17, 17, 160);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+
+.login-btn:hover {
+  background-color: rgb(18, 18, 214);
+}
+
+.goto-register {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.goto-register span {
+  color: teal;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.goto-register span:hover {
+  color: rgb(21, 170, 170);
+}
+
+.loading-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  height: 20px !important;
+  margin: 0 auto !important;
+}
+
+.errorLabel {
+  color: red;
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+.loginCancel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .login-container {
+    top: 20%;
+  }
+}

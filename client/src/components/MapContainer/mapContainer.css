@@ -1,0 +1,168 @@
+.card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+label {
+  color: rgb(16, 16, 112);
+  border-bottom: 0.5px solid rgb(16, 16, 112);
+  width: max-content;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.place {
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.star {
+  font-size: 25px;
+  color: gray;
+}
+.star-fill {
+  color: gold;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.date {
+  margin-top: -8px;
+  font-size: 12px;
+}
+
+.buttons,
+.user-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  margin-left: 20px;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.logout {
+  background-color: rgb(243, 49, 14);
+}
+
+.login {
+  background-color: rgb(17, 17, 160);
+}
+
+.register {
+  background-color: teal;
+  margin-left: 10px;
+}
+
+.logout:hover {
+  background-color: tomato;
+}
+
+.login:hover {
+  background-color: rgb(18, 18, 214);
+}
+
+.register:hover {
+  background-color: rgb(21, 170, 170);
+}
+
+.info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.marker {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.click-info {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.avatar {
+  background-color: rgb(17, 17, 160) !important;
+  margin-right: 5px;
+}
+
+.username-title {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.justify-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-delete-card {
+  display: flex;
+  align-items: center;
+}
+
+.update-delete-icons {
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.update-icon {
+  color: green;
+}
+
+.delete-icon {
+  color: rgb(202, 25, 25);
+}
+
+.update-icon:hover {
+  color: rgb(12, 206, 12);
+}
+
+.delete-icon:hover {
+  color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 992px) {
+  .buttons,
+  .user-container {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+  }
+
+  .info {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+  }
+}
