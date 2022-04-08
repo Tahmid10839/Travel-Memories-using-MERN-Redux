@@ -16,10 +16,11 @@ import { logOut } from '../../actions/users';
 import { Avatar } from '@material-ui/core';
 import LikePins from '../LikePins/LikePins';
 
-// import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
+// import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 // import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
-import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'; // Load worker code separately with worker-loader
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX
 
